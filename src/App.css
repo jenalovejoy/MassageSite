@@ -1,9 +1,23 @@
+html {
+    background-color: #001041;
+}
+
 #Navbar {
     background-color: #001041;
 }
 
-.App {
-    background-color: #001041;
+/* About */
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+#logo-image {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 #about {
@@ -11,7 +25,22 @@
     color: white;
 }
 
-#first-jumbotron {
+.intro-text {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Services Menu */
+
+#services-menu {
+    background-color: #001041;
+}
+
+#service-title {
+    text-align: center;
+}
+
+#energy-services {
     background-color: #9946DE;
     color: white;
 }
@@ -32,18 +61,30 @@
     text-decoration: underline;
 }
 
-#second-jumbotron {
+#tor-services {
     background-color: #0E2CBE;
     color: white;
 }
 
-#services {
+#massage-services {
     background-color: #428ADF;
     color: white;
 }
 
-#fourth-jumbotron {
+#implant-services {
     background-color: #471EB6;
     color: white;
+}
+
+.service-image {
+    object-fit: cover;
+    height: 100%;
+    width: 250px;
+}
+
+.service-image-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
