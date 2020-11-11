@@ -1,38 +1,49 @@
+#Navbar {
+    background-color: #001041;
+}
+
 .App {
-  text-align: center;
+    background-color: #001041;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#about {
+    background-color: #471EB6;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#first-jumbotron {
+    background-color: #9946DE;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addOn-title {
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+#indigo-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#indigo-link:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
 }
+
+#second-jumbotron {
+    background-color: #0E2CBE;
+    color: white;
+}
+
+#services {
+    background-color: #428ADF;
+    color: white;
+}
+
+#fourth-jumbotron {
+    background-color: #471EB6;
+    color: white;
+}
+
