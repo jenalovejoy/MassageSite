@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
@@ -12,9 +11,9 @@ import starRock from './images/river-rocks-star.jpg';
 function Services() {
   return (
     <div id="services-menu">
+        <h1 id="service-title">Services Menu</h1>
         <Jumbotron fluid id="massage-services" className="service-category">
             <Container>
-                <h1 id="service-title">Services Menu</h1>
                 <h2>Massage</h2>
                 <p>
                 Massage is one of the oldest practiced healing modalities. It can offer relief for the body, 
@@ -77,7 +76,7 @@ function Services() {
         </Jumbotron>
         <Jumbotron fluid id="implant-services" className="service-category">
             <Container>
-                <h2 >Implant Removal</h2>
+                <h2>Implant Removal</h2>
                 <p>
                     Implants are fairly common. They can be introduced to the body through foods we eat, what we drink, medications, 
                     what we listen to, Facebook, etc. my skill in finding and removing these are not yet fully honed, so if I cannot 
@@ -113,6 +112,8 @@ function Services() {
                     do NOT know what is going on in your life. My readings are largely intuition based. Down to the deck used, the layout, 
                     and what the cards represent where they are in the reading. I don’t always follow the layouts most people use. This 
                     makes it so much more fun, and adds another layer of mystery and accuracy. <br/>
+                </p>
+                <p>
                     General readings (15-20 min) - <i> $20 </i> <br/> 
                     In-depth readings (normally for greater clarity and guidance, can be 20 minutes to an hour) - <i>$55</i>
                 </p>

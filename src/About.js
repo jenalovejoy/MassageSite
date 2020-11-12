@@ -1,19 +1,24 @@
-// import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Container from 'react-bootstrap/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron'
 import Image from 'react-bootstrap/Image'
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import { Col, Row } from "react-bootstrap";
 
 import logo from './images/flower-power-massage.jpg';
+import greeneryPath from './images/greenery-path.jpg';
+import pinkFlower from './images/pink-flower.jpg';
+import orangeFlower from './images/orange-flower.jpg';
 
 function About() {
   return (
     <div className="App">
-        <Container id="logo-container" fluid>
-            <Image id="logo-image" src={logo} fluid/>
-        </Container>
+        
         <Jumbotron fluid id="about">
+            <Container id="logo-container" fluid>
+                <Image id="logo-image" src={logo} fluid/>
+            </Container>
             <Container>
                 <h1>Daniel Flowerdew LMT</h1>
                 <p className="intro-text"> I have practiced many holistic healing modalities since I was very little, 
@@ -38,6 +43,17 @@ function About() {
                 journey. From one human to another, I’ve been there. 
                 </p>
                 <p className="intro-text">You are not alone. I’ve got your back. </p>
+                <Row sm={1} id="about-images-row">
+                    <Col xs={6} md={3} className="about-images-col">
+                        <Image id="pink-flower-image" className="about-images" src={pinkFlower} fluid/>
+                    </Col>
+                    <Col xs={6} md={6} className="about-images-col">                    
+                        <Image id="greenery-path-image" className="about-images" src={greeneryPath} fluid/>
+                    </Col>
+                    <Col xs={6} md={3} className="about-images-col">
+                        <Image id="orange-flower-image" className="about-images" src={orangeFlower} fluid/>
+                    </Col>
+                </Row>
             </Container>
         </Jumbotron>
     </div>

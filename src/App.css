@@ -1,9 +1,29 @@
-html {
-    background-color: #001041;
+/* Color constants */
+
+/* Gem color scheme */
+/* :root {
+    --bg-navy: #001041;
+    --theme-1: #471EB6;
+    --theme-2: #9946DE;
+    --theme-3: #0E2CBE;
+    --theme-4: #428ADF;
+} */
+
+/* Nature color scheme - pink */
+:root {
+    --bg-navy: #001041;
+    --theme-1: #92327D;
+    --theme-2: #9E809B;
+    --theme-3: #507648;
+    --theme-4: #1F2F0C;
+}
+
+html, .App {
+    background-color: var(--bg-navy);
 }
 
 #Navbar {
-    background-color: #001041;
+    background-color: var(--bg-navy);
 }
 
 /* About */
@@ -12,41 +32,66 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 100%;
+    background-color: var(--theme-1);
+    margin-bottom: 50px;
 }
 
 #logo-image {
     max-height: 100%;
-    max-width: 100%;
+    max-width: auto;
+    height: 240px;
 }
 
 #about {
-    background-color: #471EB6;
+    background-color: var(--theme-1);
     color: white;
 }
 
 .intro-text {
     padding-left: 25px;
     padding-right: 25px;
+} 
+
+.about-images-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-images {
+    width: auto;
+    height: 100%;
+    max-height: 420px;
 }
 
 /* Services Menu */
 
 #services-menu {
-    background-color: #001041;
+    background-color: var(--bg-navy);
 }
 
 #service-title {
     text-align: center;
+    color: white;
+    background-color: var(--theme-1);
+    padding: 24px;
+    margin-bottom: 32px;
+
 }
 
-#energy-services {
-    background-color: #9946DE;
+#massage-services {
+    background-color: var(--theme-4);
     color: white;
 }
 
 .addOn-title {
     text-align: center;
+}
+
+#implant-services {
+    background-color: var(--theme-2);
+    color: white;
 }
 
 #indigo-link {
@@ -61,25 +106,21 @@ html {
     text-decoration: underline;
 }
 
+#energy-services {
+    background-color: var(--theme-3);
+    color: white;
+} 
+
 #tor-services {
-    background-color: #0E2CBE;
-    color: white;
-}
-
-#massage-services {
-    background-color: #428ADF;
-    color: white;
-}
-
-#implant-services {
-    background-color: #471EB6;
+    background-color: var(--theme-4);
     color: white;
 }
 
 .service-image {
     object-fit: cover;
     height: 100%;
-    width: 250px;
+    width: 100%;
+    max-width: 384px;
 }
 
 .service-image-holder {
@@ -88,3 +129,12 @@ html {
     justify-content: center;
 }
 
+/* Contact me */
+#contact {
+    background-color: var(--theme-3);
+    color: white;
+}
+
+#contact-form{
+    max-width: 85%; 
+}
