@@ -36,7 +36,7 @@ function ContactForm() {
                     <Form.Control required type="email" placeholder="name@example.com"/>
                 </Col>
             </Form.Group>
-            <Form.Group as={Row} controlID="formBasicEmail">
+            <Form.Group as={Row} controlID="formPhone">
                 <Form.Label column sm={2}>Phone Number</Form.Label>
                 <Col sm={10}>
                     <Form.Control required 
@@ -44,6 +44,16 @@ function ContactForm() {
                         placeholder="Phone number"/>
                 </Col>
             </Form.Group>
+            <Form.Group as={Row} controlID="formMessage">
+                <Form.Label column sm={2} >Notes</Form.Label>
+                <Col sm={10} rows={3}>
+                    <Form.Control required 
+                        as="textarea"
+                        rows={3}
+                        placeholder="Anything you'd like to say: questions, schedule preferences, etc."/>
+                </Col>
+            </Form.Group>
+
             <Button type="submit" variant="light">Submit</Button>
         </Form>
         </Container>

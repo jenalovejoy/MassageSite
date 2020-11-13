@@ -1,12 +1,13 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Image from 'react-bootstrap/Image'
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Image from 'react-bootstrap/Image';
+import {Row, Col} from 'react-bootstrap';
 
 import tarotImage from './images/tarot.jpg';
 import starRock from './images/river-rocks-star.jpg';
-
+import tree from './images/tree.jpg';
 
 function Services() {
   return (
@@ -73,6 +74,9 @@ function Services() {
                     - <i>$30 / 30 min</i>
                 </p>
             </Container>
+            <Container className="service-image-holder">
+                    <Image src={tree} className="service-image"/>
+            </Container>
         </Jumbotron>
         <Jumbotron fluid id="implant-services" className="service-category">
             <Container>
@@ -91,36 +95,49 @@ function Services() {
         </Jumbotron>
         <Jumbotron fluid id="energy-services" className="service-category">
             <Container>
-                <h2 >Energy Field Clearing / Balancing</h2>
-                <p>
-                    There are several methods I use for this, and the ones we use will depend on what feels right to both you and me at the time. 
-                    Methods include, smudging, 5 pointed star meditation, singing/ tones and frequencies, aura debris sweeping, and body debris 
-                    sweeping. You can have this as a part of the massage session ($15 additional charge to the massage,) or on its own <br/>
-                    Both the implant work, and energy clearing and balancing can be done remotely too, same price as above. - <i>$55 / 1 hour</i>
-                </p>
-            </Container>
-            <Container className="service-image-holder">
-                <Image src={starRock} className="service-image"/>
+                <Row xs={1} md={2}>
+                    <Col xs={12}>
+                        <h2 >Energy Field Clearing / Balancing</h2>
+                        <p className="service-text-with-image">
+                            There are several methods I use for this, and the ones we use will depend on what feels right to both you and me at the time. 
+                            Methods include, smudging, 5 pointed star meditation, singing/ tones and frequencies, aura debris sweeping, and body debris 
+                            sweeping. You can have this as a part of the massage session ($15 additional charge to the massage,) or on its own <br/>
+                            Both the implant work, and energy clearing and balancing can be done remotely too, same price as above. - <i>$55 / 1 hour</i>
+                        </p>
+                    </Col>
+                    <Col>
+                        <Container className="service-image-holder">
+                            <Image src={starRock} className="service-image"/>
+                        </Container>
+                    </Col>
+                </Row>
             </Container>
         </Jumbotron>
         <Jumbotron fluid id="tor-services" className="service-category">
             <Container>
-                <h2 >Tarot / Oracle / Rune Readings</h2>
-                <p>
-                    If you have had these done, then you know what they are. If you have never had any of these done, I ask your team 
-                    (guides, dragons, higher levels etc,) what you most need to know at that time. For these sessions, it helps if I 
-                    do NOT know what is going on in your life. My readings are largely intuition based. Down to the deck used, the layout, 
-                    and what the cards represent where they are in the reading. I don’t always follow the layouts most people use. This 
-                    makes it so much more fun, and adds another layer of mystery and accuracy. <br/>
-                </p>
-                <p>
-                    General readings (15-20 min) - <i> $20 </i> <br/> 
-                    In-depth readings (normally for greater clarity and guidance, can be 20 minutes to an hour) - <i>$55</i>
-                </p>
-                <Container className="service-image-holder">
-                    <Image src={tarotImage} className="service-image"/>
-                </Container>
+                <Row xs={1} md={2}>
+                    <Col xs={12}>
+                        <h2 >Tarot / Oracle / Rune Readings</h2>
+                        <p>
+                            If you have had these done, then you know what they are. If you have never had any of these done, I ask your team 
+                            (guides, dragons, higher levels etc,) what you most need to know at that time. For these sessions, it helps if I 
+                            do NOT know what is going on in your life. My readings are largely intuition based. Down to the deck used, the layout, 
+                            and what the cards represent where they are in the reading. I don’t always follow the layouts most people use. This 
+                            makes it so much more fun, and adds another layer of mystery and accuracy. <br/>
+                        </p>
+                        <p>
+                            General readings (15-20 min) - <i> $20 </i> <br/> 
+                            In-depth readings (normally for greater clarity and guidance, can be 20 minutes to an hour) - <i>$55</i>
+                        </p>
+                    </Col>
+                    <Col>
+                        <Container className="service-image-holder">
+                            <Image src={tarotImage} className="service-image"/>
+                        </Container>
+                    </Col>
+                </Row>
             </Container>
+           
         </Jumbotron>
     </div>
   );

@@ -43,14 +43,14 @@ function About() {
                 journey. From one human to another, I’ve been there. 
                 </p>
                 <p className="intro-text">You are not alone. I’ve got your back. </p>
-                <Row sm={1} id="about-images-row">
-                    <Col xs={6} md={3} className="about-images-col">
+                <Row xs={1} md={3} id="about-images-row">
+                    <Col className="about-images-col">
                         <Image id="pink-flower-image" className="about-images" src={pinkFlower} fluid/>
                     </Col>
-                    <Col xs={6} md={6} className="about-images-col">                    
+                    <Col className="about-images-col">                    
                         <Image id="greenery-path-image" className="about-images" src={greeneryPath} fluid/>
                     </Col>
-                    <Col xs={6} md={3} className="about-images-col">
+                    <Col className="about-images-col">
                         <Image id="orange-flower-image" className="about-images" src={orangeFlower} fluid/>
                     </Col>
                 </Row>

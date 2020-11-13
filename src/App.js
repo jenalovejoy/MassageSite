@@ -24,6 +24,7 @@ function App() {
             <Contact/>
           </Route>
         </Switch>
+        <Navigation/>
       </div>
   );
 }
