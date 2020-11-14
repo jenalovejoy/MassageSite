@@ -7,6 +7,11 @@ import Form from 'react-bootstrap/Form'
 import{ init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
 import React from 'react';
+
+const userID = "user_98QEA3KcuWYw8dktWf5tm";
+const serviceId = "service_vcqisoo";
+const templateId = "template_e73ez7t";
+
 init(userID);
 
 export default class ContactForm extends React.Component  {
@@ -36,7 +41,6 @@ export default class ContactForm extends React.Component  {
     render(){
         return (
             <Container id="contact-form-container">
-                <h2>Header</h2>
             <Form id="contact-form" onSubmit={this.handleSubmit}>
                 <Form.Group as={Row} controld="formName">
                     <Form.Label column sm={2}>Name</Form.Label>

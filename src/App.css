@@ -77,7 +77,7 @@ html, .App {
     background-color: var(--bg-navy);
 }
 
-#service-title {
+.page-title {
     text-align: center;
     color: white;
     background-color: var(--theme-1);
@@ -100,13 +100,13 @@ html, .App {
     color: white;
 }
 
-#indigo-link {
+.link {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
-#indigo-link:hover {
+.link:hover {
     color: white;
     font-weight: bold;
     text-decoration: underline;

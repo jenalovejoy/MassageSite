@@ -7,22 +7,28 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 function Contact() {
   return (
     <div className="App">
+        <h1 className="page-title">How to Contact</h1>
         <Jumbotron fluid id="contact">
             <Container>
-                <h1>Contact Me</h1>
                 <p>
-                    I am available at the location / times below. Not all services may be available at all locations.
-                    <ul>
-                        <li>Place - times/dates, contact (phone)</li>
-                        <li>Place - times/dates, contact (phone)</li>
-                        <li>Place - times/dates, contact (phone)</li>
-                    </ul>
+                    My services are available at <b>Clarity Center Crystals</b> <br/>
+                    6848 N Government Way, Dalton Gardens ID, 83815 <br/>
+                    Monday through Wednesday, 9 am - 5 pm 
                 </p>
-                <p className="contact-text">For more information, or to book an appointment, please fill out 
-                the form below and I will contact you as soon as I can 
+                <p>                
+                    I can also be reached by phone with (208) 699-4822 
+                    or at my <a href="https://www.facebook.com/FlowerdewLMT" className="link">Facebook page</a>
+                </p>
+                <p className="contact-text">For more information, or to book an appointment, 
+                    please fill out the form below and I will contact you as soon as I can 
                 </p> 
             </Container>
             <ContactForm/>
+            <Container>
+                <p>
+                    
+                </p>
+            </Container>
         </Jumbotron>
     </div>
   );
