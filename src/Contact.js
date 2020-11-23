@@ -10,10 +10,17 @@ function Contact() {
         <h1 className="page-title">How to Contact</h1>
         <Jumbotron fluid id="contact">
             <Container>
+                <h2>Availability</h2>
                 <p>
-                    My services are available at <b>Clarity Center Crystals</b> <br/>
+                    <a href="https://www.myclaritycenter.com/" className="link">Clarity Center</a> <br/>
                     6848 N Government Way, Dalton Gardens ID, 83815 <br/>
-                    Monday through Wednesday, 9 am - 5 pm 
+                    Tuesday and Wednesday, 9 am - 5 pm 
+                </p>
+                <p>
+                    <b>Now offering massage to-go with massage chair</b> <br/>
+                    Great for employee appreciation <br/>
+                    Willing to travel to Couer d'Alene, Post Falls, and surrounding areas for a small fee<br/>
+                    Mondays, 12 pm - 6 pm
                 </p>
                 <p>                
                     I can also be reached by phone with (208) 699-4822 
@@ -24,11 +31,6 @@ function Contact() {
                 </p> 
             </Container>
             <ContactForm/>
-            <Container>
-                <p>
-                    
-                </p>
-            </Container>
         </Jumbotron>
     </div>
   );

@@ -6,8 +6,8 @@ import Image from 'react-bootstrap/Image';
 import {Row, Col} from 'react-bootstrap';
 
 import tarotImage from './images/tarot.jpg';
-import starRock from './images/river-rocks-star.jpg';
 import tree from './images/tree.jpg';
+import energyImage from './images/river-rocks-star.jpg';
 
 function Services() {
   return (
@@ -15,6 +15,7 @@ function Services() {
         <h1 className="page-title">Services Menu</h1>
         <Jumbotron fluid id="massage-services" className="service-category">
             <Container>
+                
                 <h2>Massage</h2>
                 <p>
                 Massage is one of the oldest practiced healing modalities. It can offer relief for the body, 
@@ -23,10 +24,14 @@ function Services() {
                 Great for tension/ stress throughout the body, or working on specific trouble spots. 
                 </p>
                 <p>
+                    Please not that I am not a doctor. These techniques can really support the healing process,
+                    but this does not replace medical care, including physical therapy.
+                </p>
+                <p>
                     30 min - <i>$40</i> <br/> 
                     1 hour - <i>$75</i> <br/> 
                     90 min - <i>$100</i> <br/> 
-                For two hours or more, ask me for availability and price.
+                For two hours or more, please contact me for availability and pricing.
                 </p>
                 <h3>Foot massage</h3>
                 <p>
@@ -66,12 +71,6 @@ function Services() {
                     Either if you want some good cooling after an intense massage, or if your muscles need a little 
                     more nourishing. Cryoderm with mint or Cryoderm with magnesium. - <i>$15</i>
                 </p>
-
-                <h4 className="addOn-title">Foot Massage</h4>
-                <p>
-                    Foot Massage for sore or tight feet, ankles, and calves. Finished with oil to nourish the skin of the feet
-                    - <i>$30 / 30 min</i>
-                </p>
             </Container>
             <Container className="service-image-holder">
                     <Image src={tree} className="service-image"/>
@@ -106,11 +105,12 @@ function Services() {
                     </Col>
                     <Col>
                         <Container className="service-image-holder">
-                            <Image src={starRock} className="service-image"/>
+                            <Image src={energyImage} className="service-image"/>
                         </Container>
                     </Col>
                 </Row>
             </Container>
+            {/* <ServiceItem title={energyTitle} text={energyText} price="$55 / 1 hour" image={energyImage}/> */}
         </Jumbotron>
         <Jumbotron fluid id="tor-services" className="service-category">
             <Container>

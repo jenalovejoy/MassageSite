@@ -18,16 +18,31 @@
     --theme-4: #1F2F0C;
 }
 
+/* Nature color scheme - st johns wort */
+/* :root {
+    --bg-navy: #1F2F0C;
+    --theme-1: #507648;
+    --theme-2: #D8BF01;
+    --theme-3: #46701E;
+    --theme-4: #DCB606
+    ;
+} */
+
 html, .App {
     background-color: var(--bg-navy);
 }
 
-#Navbar {
+.navbar {
     background-color: var(--bg-navy);
 }
 
 .nav-text {
     padding-right: 24px;
+}
+
+.jumbotron {
+    max-width: 1400px;
+    margin: auto;
 }
 
 /* About */
@@ -118,7 +133,7 @@ html, .App {
 } 
 
 #tor-services {
-    background-color: var(--theme-4);
+    background-color: var(--theme-1);
     color: white;
 }
 
@@ -139,6 +154,17 @@ html, .App {
 #contact {
     background-color: var(--theme-3);
     color: white;
+}
+
+.ContactForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-container {
+    align-items: center;
+    justify-content: center;
 }
 
 #contact-form{

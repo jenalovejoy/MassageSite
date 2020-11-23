@@ -1,18 +1,35 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button'
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
-import Form from 'react-bootstrap/Form'
+import Form from 'react-bootstrap/Form';
 import{ init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
 import React from 'react';
 
-const userID = "user_98QEA3KcuWYw8dktWf5tm";
-const serviceId = "service_vcqisoo";
-const templateId = "template_e73ez7t";
+const userID = "";
+const serviceId = "";
+const templateId = "";
 
 init(userID);
+
+function SuccessAlert(props){
+    const setShow = props.show;
+
+    if (props.show) {
+        return (
+            <Alert variant="success" onClose={() => setShow(false)} dismissible>
+                <Alert.Heading>Message Successfully Sent!</Alert.Heading>
+                <p>
+                    I'll reach out to you as soon as I can
+                </p>
+            </Alert>
+    )};
+    
+    return <p/>;
+}
 
 export default class ContactForm extends React.Component  {
     constructor(props) {
@@ -21,12 +38,15 @@ export default class ContactForm extends React.Component  {
             name: '', 
             email: '',
             phone: '',
-            message: '' 
+            message: '',
+            show: false
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
+
     handleSubmit(event) {
+        this.setState({show: true});
         let variables = {
             client_name: this.state.name, 
             client_email: this.state.email, 
@@ -38,9 +58,12 @@ export default class ContactForm extends React.Component  {
         .catch(err => console.error("error message: ", err));
     };
 
+    
+
     render(){
         return (
             <Container id="contact-form-container">
+            <SuccessAlert show={this.state.show}/>
             <Form id="contact-form" onSubmit={this.handleSubmit}>
                 <Form.Group as={Row} controld="formName">
                     <Form.Label column sm={2}>Name</Form.Label>
