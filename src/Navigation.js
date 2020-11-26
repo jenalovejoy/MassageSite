@@ -1,10 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {  faFacebookF , } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { HashLink as Link } from 'react-router-hash-link';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import {Link} from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFacebookF , } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -16,9 +16,9 @@ function Navigation() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link as={Link} to="/">About</Nav.Link>
-                    <Nav.Link as={Link} to="/services">Services</Nav.Link>
-                    <Nav.Link as={Link} to="/contact">Contact Me</Nav.Link>
+                    <Nav.Link as={Link} to="/#about">About</Nav.Link>
+                    <Nav.Link as={Link} to="/#services">Services</Nav.Link>
+                    <Nav.Link as={Link} to="/#contact">Contact Me</Nav.Link>
                 </Nav>
                 <Navbar.Text className="nav-text">(208) 699-4822</Navbar.Text>
                 <Navbar.Text className="nav-text">fpcmassage@yahoo.com</Navbar.Text>

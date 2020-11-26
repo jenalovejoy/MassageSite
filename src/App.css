@@ -1,14 +1,5 @@
 /* Color constants */
 
-/* Gem color scheme */
-/* :root {
-    --bg-navy: #001041;
-    --theme-1: #471EB6;
-    --theme-2: #9946DE;
-    --theme-3: #0E2CBE;
-    --theme-4: #428ADF;
-} */
-
 /* Nature color scheme - pink */
 :root {
     --bg-navy: #001041;
@@ -18,15 +9,6 @@
     --theme-4: #1F2F0C;
 }
 
-/* Nature color scheme - st johns wort */
-/* :root {
-    --bg-navy: #1F2F0C;
-    --theme-1: #507648;
-    --theme-2: #D8BF01;
-    --theme-3: #46701E;
-    --theme-4: #DCB606
-    ;
-} */
 
 html, .App {
     background-color: var(--bg-navy);
@@ -62,7 +44,7 @@ html, .App {
     height: 240px;
 }
 
-#about {
+#about-info {
     background-color: var(--theme-1);
     color: white;
 }
@@ -88,7 +70,7 @@ html, .App {
 
 /* Services Menu */
 
-#services-menu {
+#services {
     background-color: var(--bg-navy);
 }
 
@@ -104,6 +86,13 @@ html, .App {
 #massage-services {
     background-color: var(--theme-4);
     color: white;
+}
+
+#flute-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
 }
 
 .addOn-title {
@@ -133,7 +122,7 @@ html, .App {
 } 
 
 #tor-services {
-    background-color: var(--theme-1);
+    background-color: var(--theme-2);
     color: white;
 }
 
@@ -151,7 +140,7 @@ html, .App {
 }
 
 /* Contact me */
-#contact {
+#contact-info {
     background-color: var(--theme-3);
     color: white;
 }

@@ -1,22 +1,20 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { Col, Row } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import { Col, Row } from "react-bootstrap";
 
 import logo from './images/flower-power-massage.jpg';
 import greeneryPath from './images/greenery-path.jpg';
-import pinkFlower from './images/pink-flower.jpg';
 import orangeFlower from './images/orange-flower.jpg';
-
+import pinkFlower from './images/pink-flower.jpg';
 
 function About() {
   return (
-    <div className="App">
-        
-        <Jumbotron id="about">
+    <div id="about">
+        <Jumbotron id="about-info">
             <Container id="logo-container" fluid>
                 <Image id="logo-image" src={logo} fluid/>
             </Container>
@@ -58,6 +56,10 @@ function About() {
                         <Image id="orange-flower-image" className="about-images" src={orangeFlower} fluid/>
                     </Col>
                 </Row>
+                <p><i>
+                    Please note that I am not a doctor. These techniques can really support the healing process,
+                    but this does not replace medical care, including physical therapy.
+                </i></p>
             </Container>
         </Jumbotron>
     </div>
