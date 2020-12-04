@@ -159,3 +159,22 @@ html, .App {
 #contact-form{
     max-width: 85%; 
 }
+
+/* Reviews */
+#review-info {
+    background-color: var(--theme-4);
+    color: white;
+}
+/* 
+#all-reviews {
+    max-width: 70%;
+} */
+
+.reviewer-name{
+    /* padding-left: 32px; */
+}
+
+.review-text {
+    padding: 16px;
+    text-align: center;
+}

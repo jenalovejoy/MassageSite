@@ -19,6 +19,8 @@ function Navigation() {
                     <Nav.Link as={Link} to="/#about">About</Nav.Link>
                     <Nav.Link as={Link} to="/#services">Services</Nav.Link>
                     <Nav.Link as={Link} to="/#contact">Contact Me</Nav.Link>
+                    <Nav.Link as={Link} to="/#testimonials">Testimonials</Nav.Link>
+
                 </Nav>
                 <Navbar.Text className="nav-text">(208) 699-4822</Navbar.Text>
                 <Navbar.Text className="nav-text">fpcmassage@yahoo.com</Navbar.Text>
