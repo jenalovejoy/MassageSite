@@ -84,11 +84,17 @@ html, .App {
 
 }
 
+.service-category {
+    margin-bottom: 12px; 
+    margin-top: 12px;   
+}
+
 #massage-services {
     background-color: var(--theme-4);
     color: white;
-    margin-bottom: 24px;    
+    
 }
+
 
 #flute-video-container {
     display: flex;
