@@ -1,8 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Container from 'react-bootstrap/Container';
 import ContactForm from './ContactForm'
+import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
 function Contact() {

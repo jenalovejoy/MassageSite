@@ -6,8 +6,8 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
-import logo from './images/flower-power-massage.jpg';
 import greeneryPath from './images/greenery-path.jpg';
+import logo from './images/flower-power-massage.jpg';
 import orangeFlower from './images/orange-flower.jpg';
 import pinkFlower from './images/pink-flower.jpg';
 

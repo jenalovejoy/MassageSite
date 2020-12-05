@@ -1,8 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Container from 'react-bootstrap/Container';
 import { Col, Row } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
 function Reviews() {
@@ -12,7 +12,7 @@ function Reviews() {
         <Jumbotron fluid id="review-info">
             <Container id="all-reviews">
                 {/* First Row */}
-                <Row md={1} lg={2} className="review-row">
+                <Row xs={1} md={1} lg={2} className="review-row">
                     <Col className="review-col">
                         <p className="review-text">
                             "While on vacation, I came to Daniel for chronic shoulder and hip pain. Typically 
@@ -52,7 +52,7 @@ function Reviews() {
                 </Row>
 
                 {/* Second row */}
-                <Row sm={1} lg={2} className="review-row">
+                <Row xs={1} sm={1} lg={2} className="review-row">
                     <Col className="review-col">
                         <Row lg={1}>
                             <p className="review-text">
@@ -86,7 +86,7 @@ function Reviews() {
                     </Col>
                     
                 </Row>
-                <Row sm={1} lg={2} className="review-row">                    
+                <Row xs={1} sm={1} lg={2} className="review-row">                    
                     <Col className="review-col">
                         <p className="review-text">
                             "I've had many massages through the years and usually try to do them once a 

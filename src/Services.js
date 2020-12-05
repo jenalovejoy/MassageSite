@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Jumbotron from 'react-bootstrap/Jumbotron';
