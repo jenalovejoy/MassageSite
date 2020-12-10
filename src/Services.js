@@ -26,7 +26,6 @@ function Services() {
                 Massage is one of the oldest practiced healing modalities. It can offer relief for the body, 
                 but it’s benefits don’t stop there. It doesn’t matter if you are stressed, in pain, or have 
                 life-long disease, massage could help. specified to your needs or can be just a general session. 
-                Great for tension/ stress throughout the body, or working on specific trouble spots. 
                 </p>
                 <p>
                     30 min - <i>$40</i> <br/> 
@@ -36,7 +35,7 @@ function Services() {
                 <p><i>For two hours or more, please contact me for availability and pricing.</i></p>
                 <h3>Foot massage</h3>
                 <p>
-                    For solely a foot massage for sore or tight feet, ankles, and calves. Finished with oil to nourish the skin of the feet
+                    Finished with oil to nourish the skin of the feet
                     - <i>$30 / 30 min</i>
                 </p>
                 
