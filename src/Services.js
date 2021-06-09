@@ -19,7 +19,7 @@ function Services() {
         <Jumbotron fluid id="massage-services" className="service-category">
             <Container>
                 <div id='flute-video-container'>
-                    <video id='flute-video' controls loop src="https://fpmassage.s3.us-east-2.amazonaws.com/flute-video.MOV"/>
+                    <video id='flute-video' controls loop src={fluteVideo}/>
                 </div>
                 <h2>Massage</h2>
                 <p>
