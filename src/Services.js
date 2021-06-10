@@ -18,27 +18,34 @@ function Services() {
         <h1 className="page-title">Services Menu</h1>
         <Jumbotron fluid id="massage-services" className="service-category">
             <Container>
-                <div id='flute-video-container'>
-                    <video id='flute-video' controls loop src={fluteVideo}/>
-                </div>
                 <h2>Massage</h2>
-                <p>
-                Massage is one of the oldest practiced healing modalities. It can offer relief for the body, 
-                but it’s benefits don’t stop there. It doesn’t matter if you are stressed, in pain, or have 
-                life-long disease, massage could help. specified to your needs or can be just a general session. 
-                </p>
-                <p>
-                    30 min - <i>$40</i> <br/> 
-                    1 hour - <i>$75</i> <br/> 
-                    90 min - <i>$100</i> <br/> 
-                </p>
-                <p><i>For two hours or more, please contact me for availability and pricing.</i></p>
-                <h3>Foot massage</h3>
-                <p>
-                    Finished with oil to nourish the skin of the feet
-                    - <i>$30 / 30 min</i>
-                </p>
+                <Row xs={1} md={2}>
+                    <Col xs={12}>
+                        <p>
+                            Massage is one of the oldest practiced healing modalities. It can offer relief for the body, 
+                            but it’s benefits don’t stop there. It doesn’t matter if you are stressed, in pain, or have 
+                            life-long disease, massage could help. specified to your needs or can be just a general session. 
+                        </p>
+                        <p>
+                            30 min - <i>$40</i> <br/> 
+                            1 hour - <i>$75</i> <br/> 
+                            90 min - <i>$100</i> <br/> 
+                        </p>
+                        <p><i>For two hours or more, please contact me for availability and pricing.</i></p>
+                        <h3>Foot massage</h3>
+                        <p>
+                            Finished with oil to nourish the skin of the feet
+                            - <i>$30 / 30 min</i>
+                        </p>
+                    </Col>
+                    <Col className="service-image-holder">
+                        <Container className="service-image-holder" id='flute-video-container'>
+                            <iframe src="https://www.youtube.com/embed/lClU-WwfgoM?autoplay=1&mute=1&playlist=lClU-WwfgoM&loop=1" className="service-image" title="Flute Video"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </Container>
+                    </Col>
+                </Row>
                 
+
                 <h3>Massage Add-ons</h3>
                 <Row xs={1} md={2}>
                     <Col xs={12}>
